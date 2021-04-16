@@ -42,6 +42,5 @@ end
 before 'deploy:starting',           'slack:deploy:starting'
 before 'deploy:updating',           'slack:deploy:updating'
 before 'deploy:reverting',          'slack:deploy:reverting'
-after  'deploy:finishing',          'slack:deploy:updated'
 after  'deploy:finishing_rollback', 'slack:deploy:reverted'
 after  'deploy:failed',             'slack:deploy:failed'
